@@ -11,7 +11,7 @@ app.use("/user",UserRouter)
 app.get('/',(req,res)=>{res.send('hello')})
 mongoose.set("strictQuery", false)
 
-mongoose.connect("mongodb+srv://skismile:7867@cluster0.izrvkm1.mongodb.net/testingdb",()=>{
+mongoose.connect("mongodb+srv://skismile:7867@cluster0.ngknmv4.mongodb.net/?retryWrites=true&w=majority",()=>{
 
-    app.listen(8081,()=>{console.log('server is runing on port 8080')})
+    app.listen(8081,()=>{console.log('server is runing on port 8081')})
 })
