@@ -10,7 +10,11 @@ res.send("user")
 
 })
 
+app.get("/create",async(req,res)=>{
 
+res.send("create route")
+
+})
 app.post("/create",async(req,res)=>{
 let {email,password,name}=req.body
 
